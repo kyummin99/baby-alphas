@@ -27,7 +27,7 @@ async function main() {
         const tx = await baby_alpha.mint(i);
         const receipt = await tx.wait();
         console.log(
-            `BabyAlpha #${i} minted via Tx ${receipt.transactionHash}`
+            `BabyAlpha #${i} minted via Tx ${receipt.transactionHash}(gas: ${receipt.gasUsed})`
         );
     }
 }

@@ -26,7 +26,7 @@ async function main() {
     const tx = await baby_alpha_erc721a.mint(8);
     const receipt = await tx.wait();
     console.log(
-        `Multiple BabyAlphaERC721A minted via Tx ${receipt.transactionHash}`
+        `Multiple BabyAlphaERC721A minted via Tx ${receipt.transactionHash}(gas: ${receipt.gasUsed})`
     );
 }
 

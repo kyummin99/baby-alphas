@@ -2,6 +2,18 @@ const hre = require("hardhat");
 
 
 async function main() {
+    console.log(`
+============================================================
+               *** Deploying $BABYALPHA ***
+    ____  ___    ______  __   ___    __    ____  __  _____
+   / __ )/   |  / __ ) \/ /  /   |  / /   / __ \/ / / /   |
+  / __  / /| | / __  |\  /  / /| | / /   / /_/ / /_/ / /| |
+ / /_/ / ___ |/ /_/ / / /  / ___ |/ /___/ ____/ __  / ___ |
+/_____/_/  |_/_____/ /_/  /_/  |_/_____/_/   /_/ /_/_/  |_|
+
+============================================================
+    `)
+
     const BabyAlpha = await hre.ethers.getContractFactory("BabyAlpha");
     const baby_alpha = await BabyAlpha.deploy();
 
